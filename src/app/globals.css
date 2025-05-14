@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.underlineColor {
+  background: #9834E7;
+  background: linear-gradient(90deg, rgba(152, 52, 231, 1) 0%, rgba(237, 78, 146, 1) 50%, rgba(250, 142, 66, 1) 100%);
+}
+
+
+.bgGradientColor {
+  background: #9834E7;
+  background: linear-gradient(90deg, rgba(152, 52, 231, 1) 0%, rgba(237, 78, 146, 1) 50%, rgba(250, 142, 66, 1) 100%);
+}
