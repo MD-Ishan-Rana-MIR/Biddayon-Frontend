@@ -1,11 +1,12 @@
 import React from 'react'
 import Banner from './Banner'
+import OurCharacter from './OurCharacter'
 
 const HomePage : React.FC = () => {
   return (
     <div>
       <Banner></Banner>
-      <h1>murad</h1>
+      <OurCharacter/> 
     </div>
   )
 }
