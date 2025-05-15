@@ -43,3 +43,10 @@ body {
   background: #9834E7;
   background: linear-gradient(90deg, rgba(152, 52, 231, 1) 0%, rgba(237, 78, 146, 1) 50%, rgba(250, 142, 66, 1) 100%);
 }
+
+.textGradient {
+  background: #9932E0;
+  background: linear-gradient(to right, #9932E0 21%, #B42EB5 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
