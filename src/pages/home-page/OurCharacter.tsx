@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 
 const OurCharacter: React.FC = () => {
     return (
-        <div className=' h-screen ' >
-            <div className='mt-32 ' >
+        <div className=' ' >
+            <div className='lg:mt-32 mt-16' >
                 <div>
-                    <button className=' bgGradientColor block mx-auto px-4 py-1 rounded-3xl text-white font-semibold ' >আমাদের বৈশিষ্ট্য</button>
-                    <h1 className='textGradient font-bold text-6xl text-center  leading-24 ' >কেন আমাদের প্লাটফর্ম বেছে নিবেন?</h1>
-                    <h1 className='text-center text-[#6b7280] text-2xl ' >আমাদের প্লাটফর্ম আপনাকে সর্বোচ্চ মানের শিক্ষা প্রদান করে, যা আপনার ক্যারিয়ার উন্নয়নে সাহায্য করবে।</h1>
+                    <button className=' bgGradientColor block mx-auto lg:px-4 px-2 py-1 rounded-3xl text-white font-semibold ' >আমাদের বৈশিষ্ট্য</button>
+                    <h1 className='textGradient font-bold text-2xl my-3 lg:my-0 lg:text-6xl text-center  lg:leading-24 ' >কেন আমাদের প্লাটফর্ম বেছে নিবেন?</h1>
+                    <h1 className='text-center text-[#6b7280] text-lg lg:text-2xl ' >আমাদের প্লাটফর্ম আপনাকে সর্বোচ্চ মানের শিক্ষা প্রদান করে, যা আপনার ক্যারিয়ার উন্নয়নে সাহায্য করবে।</h1>
                 </div>
-                <div className=' max-w-4xl mx-auto flex flex-row justify-between gap-x-14 mt-20  ' >
+                <div className=' max-w-4xl mx-auto flex flex-col lg:flex-row justify-between space-y-7 lg:space-y-0 px-4 lg:px-0 gap-x-14 mt-10 lg:mt-20  ' >
                     {/* 1st  card  */}
                     <motion.div
                         whileHover={{ y: -10 }}
