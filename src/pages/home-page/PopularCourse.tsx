@@ -66,8 +66,18 @@ export default function PopularCourse() {
   console.log(filteredCourses)
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
+    <div className=" py-32 max-w-6xl mx-auto">
 
+      <button
+        className="block mx-auto text-sm font-semibold text-white px-4 py-2 rounded-2xl  "
+        style={{
+          background: 'linear-gradient(90deg,rgba(237, 75, 145, 1) 0%, rgba(248, 113, 26, 1) 50%)'
+        }}
+      >
+        জনপ্রিয় কোর্স
+      </button>
+      <h1 className=' bg-gradient-to-r from-[#DC2A73] to-[#E8521A] bg-clip-text text-transparent text-center my-2 text-4xl font-bold ' >আমাদের সেরা কোর্সসমূহ</h1>
+      <p className=' text-center text-[#6b7280]  text-2xl ' >শিক্ষার্থীদের দ্বারা সবচেয়ে বেশি পছন্দ করা কোর্সসমূহ দেখুন</p>
       {/* Filter Bar */}
 
       <div className="flex flex-wrap gap-4 mb-10 shadow-md border border-white p-6 rounded-2xl   justify-between ">
@@ -157,7 +167,7 @@ export default function PopularCourse() {
       </div>
 
       <div className=' pt-14 ' >
-        <Link href={""}>
+        <Link className=' cursor-pointer ' href={""}>
           <button className=' block mx-auto bgGradientColor px-4  py-2 rounded-xl text-white text-[14px]  ' > সব কোর্স দেখুন</button>
         </Link>
       </div>
