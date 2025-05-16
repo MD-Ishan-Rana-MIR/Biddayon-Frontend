@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image';
 import { MoveRight } from 'lucide-react';
 
 const OurMission: React.FC = () => {

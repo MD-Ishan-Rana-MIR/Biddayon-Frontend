@@ -3,6 +3,7 @@ import Banner from './Banner'
 import OurCharacter from './OurCharacter'
 import PopularCourse from './PopularCourse'
 import OurMission from './OurMission'
+import ToJoinUs from './ToJoinUs'
 
 const HomePage : React.FC = () => {
   return (
@@ -11,6 +12,8 @@ const HomePage : React.FC = () => {
       <OurCharacter/>
       <PopularCourse/>
       <OurMission/>
+      <ToJoinUs></ToJoinUs>
+      
     </div>
   )
 }
