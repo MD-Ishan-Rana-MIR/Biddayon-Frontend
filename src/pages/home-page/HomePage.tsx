@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from './Banner'
 import OurCharacter from './OurCharacter'
 import PopularCourse from './PopularCourse'
+import OurMission from './OurMission'
 
 const HomePage : React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage : React.FC = () => {
       <Banner></Banner>
       <OurCharacter/>
       <PopularCourse/>
+      <OurMission/>
     </div>
   )
 }

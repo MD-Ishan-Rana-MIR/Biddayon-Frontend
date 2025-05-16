@@ -1,9 +1,9 @@
 "use client";
-import AboutPageBanner from '@/pages/about-page/AboutPageBanner';
-import Achievement from '@/pages/about-page/Achievement';
-import Communication from '@/pages/about-page/Communication';
-import MissionAndVission from '@/pages/about-page/MissionAndVission';
-import OurTeam from '@/pages/about-page/OurTeam';
+import AboutPageBanner from '@/app/(website-view)/about/AboutPageBanner';
+import Achievement from '@/app/(website-view)/about/Achievement';
+import Communication from '@/app/(website-view)/about/Communication';
+import MissionAndVission from '@/app/(website-view)/about/MissionAndVission';
+import OurTeam from '@/app/(website-view)/about/OurTeam';
 
 const page = () => {
     return (
