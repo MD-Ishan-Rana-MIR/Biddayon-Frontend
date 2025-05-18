@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Category = () => {
     return (
-        <div className="rounded-xl shadow-xl md:p-7 sm:p-5 p-3">
+        <div className="rounded-xl shadow-md md:p-7 sm:p-5 p-3">
             <h2 className="text-lg md:mb-4 mb-2 sm:text-lg md:text-xl bg-gradient-to-r from-[#9633E6] to-[#B22EB9] bg-clip-text text-transparent font-semibold leading-relaxed">ক্যাটাগরি</h2>
             <div>
                 <Link href={"/"} className="flex items-center justify-between hover:bg-slate-200 rounded-lg py-4 px-2">
