@@ -1,8 +1,11 @@
 import React from 'react'
+import RegistrationFrom from './RegistrationFrom'
 
 const page : React.FC = () => {
   return (
-    <div>page</div>
+    <div>
+      <RegistrationFrom></RegistrationFrom>
+    </div>
   )
 }
 
