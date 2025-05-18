@@ -2,7 +2,7 @@ import { MoveRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-import { FcFactory, FcGoogle } from "react-icons/fc";
+import {  FcGoogle } from "react-icons/fc";
 import { TiSocialFacebook } from "react-icons/ti";
 const LoginForm: React.FC = () => {
   return (
