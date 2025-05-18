@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const AboutPageBanner = () => {
     return (
-        <div className="bgGradientColor min-h-screen flex items-start py-10">
+        <div className="bgGradientColor md:min-h-screen flex items-start py-20 md:py-0 sm:py-7">
             <div className="max-w-7xl mx-auto px-4 w-full  ">
                 <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-10">
                     {/* Left Side */}
