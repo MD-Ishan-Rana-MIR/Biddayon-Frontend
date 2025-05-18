@@ -43,3 +43,41 @@ body {
   background: #9834E7;
   background: linear-gradient(90deg, rgba(152, 52, 231, 1) 0%, rgba(237, 78, 146, 1) 50%, rgba(250, 142, 66, 1) 100%);
 }
+
+.textGradient {
+  background: #9932E0;
+  background: linear-gradient(to right, #9932E0 21%, #B42EB5 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* our mission page bg color  */
+
+.ourMissionnBgColor {
+  background: #FAF4FE;
+  background: linear-gradient(90deg, rgba(250, 244, 254, 1) 0%, rgba(250, 243, 254, 1) 50%, rgba(253, 243, 249, 1) 100%);
+}
+
+
+/* StudentSuccesStory star background color  */
+
+.starBgColor {
+  background: #F9AB15;
+  background: linear-gradient(90deg, rgba(249, 171, 21, 1) 0%, rgba(249, 127, 22, 1) 50%);
+}
+
+
+/* static bg color  */
+
+.ourStaticBgColor {
+  background: #FBF6FF;
+  background: linear-gradient(90deg, rgba(251, 246, 255, 1) 0%, rgba(250, 246, 255, 1) 35%, rgba(254, 254, 255, 1) 100%);
+}
+
+/* login page background color  */
+
+.bgLoginPageColor {
+  background: #FDFBFF;
+  background: radial-gradient(circle, rgba(253, 251, 255, 1) 0%, rgba(251, 224, 225, 1) 100%);
+}
