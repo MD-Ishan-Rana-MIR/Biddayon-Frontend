@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import React from 'react';
 import { CiLocationOn, CiMail } from 'react-icons/ci';
-import { FaFacebook, FaInstagram, FaLocationArrow, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FiFacebook, FiInstagram, FiTwitter, FiYoutube } from 'react-icons/fi';
 import { IoCallOutline } from 'react-icons/io5';
 
@@ -24,12 +24,12 @@ const Footer = () => {
           <div className='text-left m-auto'>
             <h1 className='text-2xl font-bold '>দ্রুত লিঙ্ক</h1>
             <div className='flex flex-col gap-2 mt-4 '>
-              <a href="/"><h1 className='hover:text-[#c67cc9] cursor-pointer'>হোম</h1></a>
-              <a href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>কোর্সসমূহ</h1></a>
-              <a href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>আমাদের সম্পর্কে</h1></a>
-              <a href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>যোগাযোগ</h1></a>
-              <a href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>ব্লগ</h1></a>
-              <a href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>সাধারণ প্রশ্ন</h1></a>
+              <Link href="/"><h1 className='hover:text-[#c67cc9] cursor-pointer'>হোম</h1></Link>
+              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>কোর্সসমূহ</h1></Link>
+              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>আমাদের সম্পর্কে</h1></Link>
+              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>যোগাযোগ</h1></Link>
+              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>ব্লগ</h1></Link>
+              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>সাধারণ প্রশ্ন</h1></Link>
             </div>
           </div>
           <div className='text-left mx-auto'>
