@@ -63,8 +63,6 @@ export default function PopularCourse() {
     course.title.toLowerCase().includes(search.toLowerCase())
   );
 
-  console.log(filteredCourses)
-
   return (
     <div className=" px-4 lg:py-32 md:py-20 py-10 max-w-6xl mx-auto">
 

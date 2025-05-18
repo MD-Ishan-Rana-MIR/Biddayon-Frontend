@@ -1,9 +1,7 @@
 
 'use client'
 import { motion } from 'framer-motion';
-import Link from 'next/link'
 import React from 'react'
-import { MoveRight } from 'lucide-react';
 
 const OurStatic: React.FC = () => {
     return (
