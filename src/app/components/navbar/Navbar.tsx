@@ -1,9 +1,9 @@
 'use client';
 
-import { Globe, Search, SunMoon } from 'lucide-react';
+import { Globe, Menu, Search, SunMoon, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const navItems = [
     { label: 'হোম', href: '/' },
@@ -18,18 +18,24 @@ const Navbar: React.FC = () => {
     const [showSearch, setShowSearch] = useState<boolean>(false);
     const pathname = usePathname();
 
-    const [language, setLanguage] = useState<string>('Bangla');
+    const [language, setLanguage] = useState<'en' | 'bn'>('bn');
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+    const [drawerOpen, setDrawerOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement | null>(null);
+    const searchRef = useRef<HTMLDivElement | null>(null);
+
     // Toggle modal visibility
     const toggleModal = () => {
         console.log(`modal open`)
         setIsModalOpen(!isModalOpen);
     };
 
+
+
     // Change the language
-    const handleLanguageChange = (newLanguage: string) => {
+    const handleLanguageChange = (newLanguage: 'en' | 'bn') => {
         setLanguage(newLanguage);
-        toggleModal(); // Close the modal after selecting the language
+        toggleModal();
     };
 
     useEffect(() => {
@@ -41,9 +47,39 @@ const Navbar: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Outside click to close language dropdown
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (
+                dropdownRef.current &&
+                !dropdownRef.current.contains(event.target as Node)
+            ) {
+                setIsModalOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+    // searchbar modal close when click outside
+
+     useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (
+                searchRef.current &&
+                !searchRef.current.contains(event.target as Node)
+            ) {
+                setShowSearch(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+
     return (
         <div className={`fixed top-0 left-0 w-full bg-white z-50 transition-shadow duration-300 ${hasShadow ? 'shadow-md' : ''}`}>
-            <div className="max-w-7xl mx-auto flex items-center justify-between py-4 ">
+            <div className="max-w-7xl hidden mx-auto lg:flex items-center justify-between py-4 ">
                 {/* logo */}
                 <div>
                     <Link href="/">
@@ -92,7 +128,7 @@ const Navbar: React.FC = () => {
                             onClick={toggleModal}
                             className="flex items-center gap-1 text-gray-600 hover:text-[#9834E7] cursor-pointer transition-colors duration-200"
                         >
-                            <span>{language ? "BN" : "EN"}</span>
+                            <span>{language.toLocaleUpperCase()}</span>
                             <Globe className="w-5 h-5" />
                         </button>
 
@@ -124,7 +160,7 @@ const Navbar: React.FC = () => {
 
 
                 {/* Search Box */}
-                <div className={`fixed inset-0  shadow-2xl shadow-white h-40 top-[60px] bg-white z-40 flex flex-col items-center p-4 transition-all duration-500 transform ${showSearch ? 'scale-100' : 'scale-0 opacity-0'}`}>
+                <div ref={searchRef} className={`fixed inset-0  shadow-2xl shadow-white h-40 top-[60px] bg-white z-40 flex flex-col items-center p-4 transition-all duration-500 transform ${showSearch ? 'scale-100' : 'scale-0 opacity-0'}`}>
                     <div className="relative w-full max-w-7xl mx-auto">
                         <input
                             type="text"
@@ -157,23 +193,74 @@ const Navbar: React.FC = () => {
                 </div>
             </div>
 
+            {/* Mobile Hamburger */}
+            <div className="md:hidden py-3 ">
+                <button className=' flex justify-end  px-4  ' onClick={() => setDrawerOpen(true)}>
+                    <Menu className="w-6 h-6 text-[#9834E7]   " />
+                </button>
+            </div>
 
 
+            {/* small device navbar  */}
+
+            {/* Mobile Drawer */}
+            <div className={`fixed top-0 left-0 w-64 h-full bg-white z-50 shadow-xl p-6 transform transition-transform duration-300 ${drawerOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <div className="flex justify-between items-center mb-6">
+                    <h2 className="text-xl font-bold text-[#9834E7]">মেনু</h2>
+                    <button onClick={() => setDrawerOpen(false)}>
+                        <X className="w-6 h-6 text-gray-700" />
+                    </button>
+                </div>
+                <nav className="flex flex-col space-y-4">
+                    {navItems.map((item, index) => (
+                        <Link
+                            key={index}
+                            href={item.href}
+                            onClick={() => setDrawerOpen(false)}
+                            className="text-base font-medium text-gray-800 hover:text-[#9834E7] transition"
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
+                </nav>
+                <div className="mt-6 flex flex-col space-y-2">
+                    <Link href="/login" className="w-full text-center py-2 border border-[#9834E7] text-[#9834E7] rounded-md text-sm hover:bg-[#9834E7] hover:text-white transition">
+                        লগইন
+                    </Link>
+                    <Link href="/register" className="w-full text-center py-2 bg-[#9834E7] text-white rounded-md text-sm hover:bg-[#7a2ec0] transition">
+                        রেজিস্টার
+                    </Link>
+                </div>
+            </div>
+
+            {/* Overlay */}
+            {drawerOpen && (
+                <div onClick={() => setDrawerOpen(false)} className="fixed inset-0 bg-black bg-opacity-30 z-40" />
+            )}
+
+
+            {/* language modal  */}
 
 
             {isModalOpen && (
-                <div className="fixed inset-0 top-16  bg-opacity-50 z-40 flex justify-start transition-all duration-700 ease-in-out">
-                    <div className={`bg-white p-2 rounded-lg  w-[8%] ml-[75%] h-[80px] border flex justify-center items-center ${isModalOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'} transition-all duration-700 ease-in-out`}>
+                <div className="fixed inset-0 top-16 bg-opacity-50 z-40 flex justify-start transition-all duration-700 ease-in-out">
+                    {/* Background click area */}
+                    <div
+                        className={`bg-white p-2 rounded-lg w-[10%] ml-[75%] h-[80px] flex justify-center items-center 
+                ${isModalOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'} 
+                transition-all duration-700 ease-in-out`}
+                        ref={dropdownRef} // ✅ Moved here
+                    >
                         <div className="flex flex-col">
                             <button
-                                onClick={() => handleLanguageChange('Bangla')}
+                                onClick={() => handleLanguageChange(language === 'bn' ? 'en' : 'bn')}
                                 className="text-sm py-1 px-2 flex items-center gap-2.5 hover:bg-gray-200 hover:text-black font-semibold rounded-lg transition-colors"
                             >
                                 বাংলা <span>(Bangla)</span>
                             </button>
                             <button
-                                onClick={() => handleLanguageChange('English')}
-                                className="text-sm py-1 px-2 hover:bg-gray-200 hover:text-black transition-colors"
+                                onClick={() => handleLanguageChange(language === 'bn' ? 'en' : 'bn')}
+                                className="text-sm py-1 px-2 hover:bg-gray-200 hover:text-black rounded-2xl transition-colors"
                             >
                                 English
                             </button>
