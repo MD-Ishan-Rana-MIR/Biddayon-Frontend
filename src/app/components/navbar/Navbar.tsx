@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
 
     // searchbar modal close when click outside
 
-     useEffect(() => {
+    useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (
                 searchRef.current &&
@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
                                 লগইন
                             </Link>
                             <Link
-                                href="/register"
+                                href="/registration"
                                 className="px-4 underlineColor py-2  bg-[#9834E7] text-white rounded-md text-sm hover:bg-[#7a2ec0] transition-colors duration-300"
                             >
                                 রেজিস্টার
@@ -227,7 +227,7 @@ const Navbar: React.FC = () => {
                     <Link href="/login" className="w-full text-center py-2 border border-[#9834E7] text-[#9834E7] rounded-md text-sm hover:bg-[#9834E7] hover:text-white transition">
                         লগইন
                     </Link>
-                    <Link href="/register" className="w-full text-center py-2 bg-[#9834E7] text-white rounded-md text-sm hover:bg-[#7a2ec0] transition">
+                    <Link href="/registration" className="w-full text-center py-2 bg-[#9834E7] text-white rounded-md text-sm hover:bg-[#7a2ec0] transition">
                         রেজিস্টার
                     </Link>
                 </div>
