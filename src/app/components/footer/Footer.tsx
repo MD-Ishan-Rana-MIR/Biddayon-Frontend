@@ -21,7 +21,7 @@ const Footer = () => {
               <FiYoutube className='text-2xl hover:text-[#c67cc9] cursor-pointer' />
             </div>
           </div>
-          <div className='text-left m-auto'>
+          <div className='text-left '>
             <h1 className='text-2xl font-bold '>দ্রুত লিঙ্ক</h1>
             <div className='flex flex-col gap-2 mt-4 '>
               <a href="/"><h1 className='hover:text-[#c67cc9] cursor-pointer'>হোম</h1></a>
@@ -32,7 +32,7 @@ const Footer = () => {
               <a href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>সাধারণ প্রশ্ন</h1></a>
             </div>
           </div>
-          <div className='text-left mx-auto'>
+          <div className='text-left'>
             <h1 className='text-2xl font-bold '>যোগাযোগ</h1>
            <div>
             <div className='flex items-center mt-4'>
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
            </div>
           </div>
-          <div className='text-left mx-auto '>
+          <div className='text-left '>
 
             <h1 className='text-2xl font-bold '>নিউজলেটার</h1>
             <p className='my-4'>
