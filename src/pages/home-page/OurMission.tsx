@@ -15,7 +15,7 @@ const OurMission: React.FC = () => {
                         <span className="inline-block bg-[#477AF5] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
                             আমাদের সম্পর্কে
                         </span>
-                        <h2 className="text-2xl md:text-5xl font-bold text-[#4E47E6] md:mb-4 leading-snug">
+                        <h2 className="text-3xl sm:text-2xl  md:text-2xl lg:text-6xl font-semibold text-[#4E47E6] md:mb-4 leading-snug">
                             আমাদের লক্ষ্য
                         </h2>
                         <p className="text-[#6B7280] md:text-xl mb-3 leading-relaxed">
