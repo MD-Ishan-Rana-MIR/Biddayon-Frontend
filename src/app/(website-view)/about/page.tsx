@@ -13,6 +13,7 @@ const page = () => {
             <OurTeam></OurTeam>
             <Achievement></Achievement>
             <Communication></Communication>
+            
         </div>
     );
 };

@@ -58,3 +58,11 @@ body {
   background: #FAF4FE;
   background: linear-gradient(90deg, rgba(250, 244, 254, 1) 0%, rgba(250, 243, 254, 1) 50%, rgba(253, 243, 249, 1) 100%);
 }
+
+
+/* StudentSuccesStory star background color  */
+
+.starBgColor {
+  background: #F9AB15;
+  background: linear-gradient(90deg, rgba(249, 171, 21, 1) 0%, rgba(249, 127, 22, 1) 50%);
+}
