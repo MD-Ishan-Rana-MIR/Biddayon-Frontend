@@ -11,7 +11,7 @@ const Achievement = () => {
                 <h2 className="text-5xl font-bold text-green-500 mt-2">আমাদের সাফল্য</h2>
                 <p className="text-slate-700 text-lg">২০১৮ সাল থেকে আমরা অনেক পথ পাড়ি দিয়েছি। আমাদের কিছু উল্লেখযোগ্য অর্জন:</p>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-3">
-                    <div className="flex items-center gap-4 shadow-xl p-5 rounded-xl">
+                    <div className="flex items-center gap-4 shadow-md p-5 rounded-xl">
                         <p className="bg-green-500 p-3 inline-block rounded-full">
                             <Users size={30} className="text-white"/>
                         </p>
@@ -20,7 +20,7 @@ const Achievement = () => {
                             <p className="text-sm text-slate-600">শিক্ষার্থী</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-4 shadow-xl p-5 rounded-xl">
+                    <div className="flex items-center gap-4 shadow-md p-5 rounded-xl">
                         <p className="bg-green-500 p-3 inline-block rounded-full">
                             <BookOpen size={30} className="text-white"/>
                         </p>
@@ -29,7 +29,7 @@ const Achievement = () => {
                             <p className="text-sm text-slate-600">কোর্স</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-4 shadow-xl p-5 rounded-xl">
+                    <div className="flex items-center gap-4 shadow-md p-5 rounded-xl">
                         <p className="bg-green-500 p-3 inline-block rounded-full">
                             <GraduationCap size={30} className="text-white"/>
                         </p>
@@ -38,7 +38,7 @@ const Achievement = () => {
                             <p className="text-sm text-slate-600">শিক্ষক</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-4 shadow-xl p-5 rounded-xl">
+                    <div className="flex items-center gap-4 shadow-md p-5 rounded-xl">
                         <p className="bg-green-500 p-3 inline-block rounded-full">
                             <Award size={30} className="text-white" />
                         </p>
