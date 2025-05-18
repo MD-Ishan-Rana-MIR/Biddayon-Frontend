@@ -7,8 +7,8 @@ import { IoCallOutline } from 'react-icons/io5';
 const Footer = () => {
   return (
     <div>
-      <div className='bg-gradient-to-r from-[#13082E] to-[#19081C] text-white py-4'>
-        <div className="grid mx-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 text-center">
+      <div className='bg-gradient-to-r from-[#13082E] to-[#19081C]  text-white py-4'>
+        <div className="grid mx-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-4 text-center">
           <div className='text-left mx-auto'>
             <h1 className='text-2xl font-bold my-4 text-[#ba0cc0]'>Logo</h1>
             <p>
@@ -56,10 +56,10 @@ const Footer = () => {
               আমাদের নতুন কোর্স এবং অফার সম্পর্কে জানতে সাবস্ক্রাইব করুন
             </p>
 
-            <div>
+            <div className='flex items-center'>
               <input type="email" placeholder="আপনার ইমেইল ঠিকানা" className='border border-gray-300 p-2 rounded-md' />
 
-              <button className='bg-[#ba0cc0] text-white px-4 py-2.5 rounded-md ml-2'>সাবস্ক্রাইব</button>
+              <button className='bg-[#ba0cc0] text-white px-3 py-2.5 rounded-md ml-2'>সাবস্ক্রাইব</button>
             </div>
 
           </div>
