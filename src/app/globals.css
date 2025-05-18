@@ -66,3 +66,11 @@ body {
   background: #F9AB15;
   background: linear-gradient(90deg, rgba(249, 171, 21, 1) 0%, rgba(249, 127, 22, 1) 50%);
 }
+
+
+/* static bg color  */
+
+.ourStaticBgColor{
+  background: #FBF6FF;
+  background: linear-gradient(90deg, rgba(251, 246, 255, 1) 0%, rgba(250, 246, 255, 1) 35%, rgba(254, 254, 255, 1) 100%);
+}

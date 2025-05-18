@@ -32,7 +32,7 @@ const testimonials: Testimonial[] = [
 
 export default function StudentSuccesStory() {
   return (
-    <main className=" bg-gray-50 md:py-10 py-6 lg:py-24 px-4">
+    <main className="  md:py-10 py-6 lg:py-24 px-4">
       <div>
         <button className=' block  mx-auto font-semibold text-sm bg-[#21C560] px-4 py-0.5 text-white rounded-3xl ' >সাফল্যের গল্প</button>
         <h1 className=' lg:leading-20  text-[#21C560] text-center my-2 text-lg md:text-2xl lg:text-4xl font-bold  ' >আমাদের শিক্ষার্থীদের সাফল্য</h1>
