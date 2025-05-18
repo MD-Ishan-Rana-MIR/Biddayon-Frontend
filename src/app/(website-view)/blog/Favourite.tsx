@@ -5,12 +5,12 @@ import React from 'react';
 
 const Favourite = () => {
     return (
-        <div className="rounded-xl shadow-xl md:p-7 sm:p-5 p-3">
+        <div className="rounded-xl shadow-md md:p-7 sm:p-5 p-3">
             <h2 className="text-lg md:mb-4 mb-2 sm:text-lg md:text-xl bg-gradient-to-r from-[#9633E6] to-[#B22EB9] bg-clip-text text-transparent font-semibold leading-relaxed">জনপ্রিয় পোস্ট</h2>
             <div>
                 {
                     favouritePosts.slice(0,3).map(post =>
-                        <Link className='p-3 rounded-xl flex justify-between gap-5 hover:bg-gray-100' href={"/"} key={post?.id}>
+                        <Link className='p-3 rounded-xl flex gap-7 md:gap-5 hover:bg-gray-100' href={"/"} key={post?.id}>
                             <Image className='h-[100px] rounded-xl' width={100} height={50} alt={post?.tag} src={post?.img}></Image>
                             <div>
                                 <h2 className='text-[16px] font-medium'>{post?.title}</h2>

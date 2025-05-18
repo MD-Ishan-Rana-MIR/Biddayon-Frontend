@@ -16,8 +16,8 @@ const ContactForm = () => {
         console.log(newMessage);
     }
     return (
-        <div className='shadow-xl rounded-xl p-5 md:p-7 line'>
-             <h1 className="text-xl md:mb-4 mb-2 sm:text-2xl md:text-4xl bg-gradient-to-r from-[#9633E6] to-[#B22EB9] bg-clip-text text-transparent font-semibold">আমাদের মেসেজ পাঠান</h1>
+        <div className='shadow-md rounded-xl p-5 md:p-7 line'>
+             <h1 className="text-xl md:mb-4 mb-2 sm:text-2xl md:text-4xl bg-gradient-to-r from-[#862bd1] to-[#ec4bf5] bg-clip-text text-transparent font-semibold">আমাদের মেসেজ পাঠান</h1>
              <p className="text-slate-600 text-sm sm:text-[15px] md:text-lg">আপনার যেকোনো প্রশ্ন বা মতামত জানাতে নিচের ফর্মটি পূরণ করুন</p>
              <form onSubmit={handleSendMessage} className='md:mt-4 mt-2'>
                 <div className='flex flex-col md:flex-row md:gap-5 gap-2'>

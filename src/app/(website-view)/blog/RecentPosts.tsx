@@ -29,9 +29,9 @@ const RecentPosts = () => {
             <div className='md:space-y-8 sm:space-y-6 space-y-4'>
                 {
                     currentPosts.map(post=>
-                        <div className='grid grid-cols-2 gap-5 shadow-xl rounded-lg overflow-hidden h-[340px]' key={post?.id}>
+                        <div className='grid md:grid-cols-2 grid-cols-1 gap-5 shadow-md rounded-lg overflow-hidden md:h-[300px] py-7 md:py-0 sm:py-0' key={post?.id}>
                             <div className='relative'>
-                                <Image className='w-full h-[300px]' width={100} height={400} alt={post?.tag} src={post?.img}></Image>
+                                <Image className='w-full h-[270px]' width={100} height={400} alt={post?.tag} src={post?.img}></Image>
                                 <p className='absolute top-2 right-2 text-sm text-white bg-gradient-to-r from-[#8022CC] to-[#BD1960] rounded-4xl px-3 py-[2px]'>{post?.tag}</p>
                             </div>
                             <div className='flex flex-col justify-center gap-3 px-2'>
