@@ -7,7 +7,7 @@ const OurStatic: React.FC = () => {
     return (
         <div className='ourStaticBgColor' >
             <section className=" max-w-7xl mx-auto px-4 md:py-20 py-8 lg:py-32 ">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
                     {/* left Image Placeholder */}
                     <motion.div
                         animate={{
@@ -27,30 +27,30 @@ const OurStatic: React.FC = () => {
                         <span className="inline-block bg-gradient-to-r from-[#09B3D6] via-[#3884F4] to-[#1E9FE4] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
                             আমাদের পরিসংখ্যান
                         </span>
-                        <h2 className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-[#09B3D6] via-[#3884F4] to-[#1E9FE4] bg-clip-text text-transparent md:mb-4 leading-snug">
+                        <h2 className="text-3xl sm:text-2xl  md:text-2xl lg:text-5xl font-semibold bg-gradient-to-r from-[#09B3D6] via-[#3884F4] to-[#1E9FE4] bg-clip-text text-transparent md:mb-4 leading-snug">
                             সংখ্যায় আমাদের সাফল্য
                         </h2>
 
                         <div className=' grid md:grid-cols-2 gap-5 mx-auto  ' >
                             {/* total student box  */}
-                            <div className=' w-[300px] mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
-                                <h1 className=' text-4xl font-semibold bg-gradient-to-r from-[#A430CE] via-[#B82DB0] to-[#D863AF] bg-clip-text text-transparent ' >৫০,০০০+</h1>
-                                <p className=' text-xl text-[#6B7280] ' >শিক্ষার্থী</p>
+                            <div className=' lg:w-[300px] md:w-[150px] w-full mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
+                                <h1 className=' lg:text-4xl text-2xl font-semibold bg-gradient-to-r from-[#A430CE] via-[#B82DB0] to-[#D863AF] bg-clip-text text-transparent ' >৫০,০০০+</h1>
+                                <p className=' lg:text-xl text-[#6B7280] ' >শিক্ষার্থী</p>
                             </div>
                             {/* total course box  */}
-                            <div className=' w-[300px] mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
-                                <h1 className=' text-4xl font-semibold bg-gradient-to-r from-[#E13952] via-[#E23E44] to-[#E44633] bg-clip-text text-transparent ' >১০০+</h1>
-                                <p className=' text-xl text-[#6B7280] ' >কোর্স</p>
+                            <div className=' lg:w-[300px] md:w-[150px] w-full mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
+                                <h1 className=' lg:text-4xl text-2xl font-semibold bg-gradient-to-r from-[#E13952] via-[#E23E44] to-[#E44633] bg-clip-text text-transparent ' >১০০+</h1>
+                                <p className=' lg:text-xl text-[#6B7280] ' >কোর্স</p>
                             </div>
                             {/* total teacher box  */}
-                            <div className=' w-[300px] mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
-                                <h1 className=' text-4xl font-semibold text-[#E36409] ' >৫০+</h1>
-                                <p className=' text-xl text-[#6B7280] ' >শিক্ষক</p>
+                            <div className=' lg:w-[300px] md:w-[150px] w-full mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
+                                <h1 className=' lg:text-4xl text-2xl font-semibold text-[#E36409] ' >৫০+</h1>
+                                <p className=' lg:text-xl text-[#6B7280] ' >শিক্ষক</p>
                             </div>
                             {/* percentance box  */}
-                            <div className=' w-[300px] mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
-                                <h1 className=' text-4xl font-semibold text-[#0F9D56] ' >৯৮%</h1>
-                                <p className=' text-xl text-[#6B7280] ' >সন্তুষ্টি হার</p>
+                            <div className=' lg:w-[300px] md:w-[150px] w-full mx-auto shadow-md bg-white text-center py-6 rounded-xl ' >
+                                <h1 className=' lg:text-4xl text-2xl font-semibold text-[#0F9D56] ' >৯৮%</h1>
+                                <p className=' lg:text-xl text-[#6B7280] ' >সন্তুষ্টি হার</p>
                             </div>
                         </div>
 

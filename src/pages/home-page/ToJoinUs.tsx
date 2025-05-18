@@ -7,7 +7,7 @@ const ToJoinUs: React.FC = () => {
         <div>
             <div>
                 <div className=' h-[400px] bg-gradient-to-r from-[#9534E9] via-[#EA479A] to-[#FB8F40] flex justify-center items-center flex-col gap-2 text-center'>
-                    <h1 className='md:text-5xl text-2xl sm:text-3xl font-bold text-white'>আজই যোগ দিন</h1>
+                    <h1 className='text-3xl sm:text-2xl  md:text-2xl lg:text-6xl font-semibold text-white'>আজই যোগ দিন</h1>
                     <p className='text-slate-200 md:text-xl sm:text-lg text-[16px] font-semibold'>আপনার জ্ঞানের যাত্রা শুরু করতে আমাদের সাথে যোগ দিন
 
                     </p>

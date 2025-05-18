@@ -194,7 +194,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Hamburger */}
-            <div className="md:hidden py-3 ">
+            <div className="lg:hidden py-6 ">
                 <button className=' flex justify-end  px-4  ' onClick={() => setDrawerOpen(true)}>
                     <Menu className="w-6 h-6 text-[#9834E7]   " />
                 </button>

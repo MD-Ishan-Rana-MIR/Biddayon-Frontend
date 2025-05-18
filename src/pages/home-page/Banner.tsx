@@ -16,10 +16,10 @@ const Banner: React.FC = () => {
                         <button className="bg-white/20 px-4 py-2 rounded-lg text-sm sm:text-base md:text-lg font-semibold text-white">
                             #১ শিক্ষা প্লাটফর্ম
                         </button>
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white font-bold mt-4 leading-tight">
+                        <h1 className="text-3xl sm:text-2xl  md:text-2xl lg:text-6xl text-white font-bold mt-4 leading-tight">
                             আপনার জ্ঞানের যাত্রা শুরু করুন আজই
                         </h1>
-                        <p className="text-base sm:text-lg md:text-xl text-white my-4 leading-relaxed">
+                        <p className="text-base sm:text-lg md:text-lg text-white my-4 leading-relaxed">
                             শিক্ষালয় আপনাকে সেরা শিক্ষকদের সাথে সংযুক্ত করে, যারা আপনাকে আপনার পছন্দের বিষয়ে দক্ষতা অর্জনে সাহায্য করবে।
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 mt-4">
@@ -38,7 +38,7 @@ const Banner: React.FC = () => {
                     <motion.div
                         animate={{ y: [0, -20, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                        className="h-[300px] md:h-[350px] w-full bg-gray-200 px-3 rounded-r-[12px] border-[5px] border-[#2B57F1] flex items-center justify-center"
+                        className="h-[300px] md:h-[350px] w-full bg-gray-200 px-3 rounded-[12px] border-[5px] border-[#2B57F1] flex items-center justify-center"
                     >
                         <span className="text-gray-400">Image Placeholder</span>
                     </motion.div>

@@ -35,7 +35,7 @@ export default function StudentSuccesStory() {
     <main className="  md:py-10 py-6 lg:py-24 px-4">
       <div>
         <button className=' block  mx-auto font-semibold text-sm bg-[#21C560] px-4 py-0.5 text-white rounded-3xl ' >সাফল্যের গল্প</button>
-        <h1 className=' lg:leading-20  text-[#21C560] text-center my-2 text-lg md:text-2xl lg:text-4xl font-bold  ' >আমাদের শিক্ষার্থীদের সাফল্য</h1>
+        <h1 className=' lg:leading-20  text-[#21C560] text-center my-2 text-3xl sm:text-2xl  md:text-2xl lg:text-6xl font-semibold  ' >আমাদের শিক্ষার্থীদের সাফল্য</h1>
         <p className=' text-center text-[#6b7280]  text-[16px] lg:text-2xl lg:leading-0  ' >আমাদের প্লাটফর্মে শিক্ষা গ্রহণ করে সফল হওয়া শিক্ষার্থীদের গল্প</p>
       </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center lg:mt-12 md:mt-6 mt-4 ">
