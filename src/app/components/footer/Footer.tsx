@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
            </div>
           </div>
-          <div className='text-left mx-auto'>
+          <div className='text-left mx-auto '>
 
             <h1 className='text-2xl font-bold '>নিউজলেটার</h1>
             <p className='my-4'>
@@ -59,7 +59,7 @@ const Footer = () => {
             <div className='flex items-center'>
               <input type="email" placeholder="আপনার ইমেইল ঠিকানা" className='border border-gray-300 p-2 rounded-md' />
 
-              <button className='bg-[#ba0cc0] text-white px-3 py-2.5 rounded-md ml-2'>সাবস্ক্রাইব</button>
+              <button className='bg-[#ba0cc0] text-white px-2 py-2.5 rounded-md ml-2'>সাবস্ক্রাইব</button>
             </div>
 
           </div>

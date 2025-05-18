@@ -1,11 +1,22 @@
 import React from 'react'
 import Banner from './Banner'
+import OurCharacter from './OurCharacter'
+import PopularCourse from './PopularCourse'
+import OurMission from './OurMission'
+import ToJoinUs from './ToJoinUs'
+import StudentSuccesStory from './StudentSuccesStory'
+import OurStatic from './OurStatic'
 
-const HomePage : React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <div>
       <Banner></Banner>
-      <h1>murad</h1>
+      <OurCharacter />
+      <PopularCourse />
+      <OurMission />
+      <ToJoinUs></ToJoinUs>
+      <StudentSuccesStory></StudentSuccesStory>
+      <OurStatic/>
     </div>
   )
 }
