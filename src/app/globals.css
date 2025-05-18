@@ -70,7 +70,14 @@ body {
 
 /* static bg color  */
 
-.ourStaticBgColor{
+.ourStaticBgColor {
   background: #FBF6FF;
   background: linear-gradient(90deg, rgba(251, 246, 255, 1) 0%, rgba(250, 246, 255, 1) 35%, rgba(254, 254, 255, 1) 100%);
+}
+
+/* login page background color  */
+
+.bgLoginPageColor {
+  background: #FDFBFF;
+  background: radial-gradient(circle, rgba(253, 251, 255, 1) 0%, rgba(251, 224, 225, 1) 100%);
 }
