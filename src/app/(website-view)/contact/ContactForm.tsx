@@ -17,9 +17,9 @@ const ContactForm = () => {
     }
     return (
         <div className='shadow-md rounded-xl p-5 md:p-7 line'>
-             <h1 className="text-xl md:mb-4 mb-2 sm:text-2xl md:text-4xl bg-gradient-to-r from-[#862bd1] to-[#ec4bf5] bg-clip-text text-transparent font-semibold">আমাদের মেসেজ পাঠান</h1>
+             <h1 className="text-2xl md:mb-4 mb-2 sm:text-3xl md:text-4xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold leading-relaxed">আমাদের মেসেজ পাঠান</h1>
              <p className="text-slate-600 text-sm sm:text-[15px] md:text-lg">আপনার যেকোনো প্রশ্ন বা মতামত জানাতে নিচের ফর্মটি পূরণ করুন</p>
-             <form onSubmit={handleSendMessage} className='md:mt-4 mt-2'>
+             <form onSubmit={handleSendMessage} className='md:mt-6 mt-4'>
                 <div className='flex flex-col md:flex-row md:gap-5 gap-2'>
                     <div className='w-full'>
                         <label className='text-sm font-medium block md:mb-2 mb-1'>আপনার নাম</label>

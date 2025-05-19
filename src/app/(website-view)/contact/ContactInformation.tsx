@@ -8,7 +8,7 @@ const PositionMap = dynamic(() =>import("./PositionMap"), {ssr: false});
 const ContactInformation = () => {
     return (
         <div>
-            <h1 className="text-xl md:mb-4 mb-2 sm:text-2xl md:text-4xl bg-gradient-to-r from-[#862bd1] to-[#ec4bf5] bg-clip-text text-transparent font-semibold">যোগাযোগের তথ্য</h1>
+            <h1 className="text-2xl md:mb-4 mb-1 sm:text-53l md:text-4xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold">যোগাযোগের তথ্য</h1>
             <p className="text-slate-600 text-sm sm:text-[15px] md:text-lg">আমাদের সাথে যোগাযোগ করতে নিচের যেকোনো মাধ্যম ব্যবহার করতে পারেন</p>
             <div className="md:mt-5 mt-3 space-y-2 sm:space-y-4 md:space-y-6">
                 <div className="md:px-4 px-2 py-7 shadow-md rounded-xl w-full flex items-center gap-5">
