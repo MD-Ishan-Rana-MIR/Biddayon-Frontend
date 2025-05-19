@@ -212,6 +212,7 @@ const Navbar: React.FC = () => {
                     </button>
                 </div>
                 <nav className="flex flex-col space-y-4">
+                    
                     {navItems.map((item, index) => (
                         <Link
                             key={index}
@@ -224,10 +225,10 @@ const Navbar: React.FC = () => {
                     ))}
                 </nav>
                 <div className="mt-6 flex flex-col space-y-2">
-                    <Link href="/login" className="w-full text-center py-2 border border-[#9834E7] text-[#9834E7] rounded-md text-sm hover:bg-[#9834E7] hover:text-white transition">
+                    <Link  onClick={() => setDrawerOpen(false)} href="/login" className="w-full text-center py-2 border border-[#9834E7] text-[#9834E7] rounded-md text-sm hover:bg-[#9834E7] hover:text-white transition">
                         লগইন
                     </Link>
-                    <Link href="/registration" className="w-full text-center py-2 bg-[#9834E7] text-white rounded-md text-sm hover:bg-[#7a2ec0] transition">
+                    <Link onClick={() => setDrawerOpen(false)} href="/registration" className="w-full text-center py-2 bg-[#9834E7] text-white rounded-md text-sm hover:bg-[#7a2ec0] transition">
                         রেজিস্টার
                     </Link>
                 </div>
