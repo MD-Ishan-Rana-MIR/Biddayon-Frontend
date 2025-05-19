@@ -11,10 +11,10 @@ const BlogPageBanner = () => {
             <button className="bg-white/20 px-4 py-2 rounded-lg text-sm sm:text-base md:text-sm font-semibold text-white">
               ব্লগ
             </button>
-            <h1 className="text-lg sm:text-xl md:text-3xl lg:text-6xl text-white font-bold mt-4 leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-white font-bold mt-4 leading-tight">
               আমাদের ব্লগে স্বাগতম
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white md:my-4 my-2 leading-relaxed">
+            <p className="text-[14px] sm:text-lg md:text-xl text-white md:my-4 my-2 leading-relaxed">
               শিক্ষা, প্রযুক্তি, ক্যারিয়ার এবং আরও অনেক বিষয়ে আমাদের নিয়মিত আপডেট পেতে আমাদের ব্লগ ফলো করুন।
             </p>
             <form>

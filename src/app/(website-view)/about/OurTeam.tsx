@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const OurTeam = () => {
     return (
-        <div className="mt-32">
+        <div className='md:mt-20 sm:mt-16 mt-14'>
             {/* title and description */}
             <div className="text-center">
                 <p className="bg-gradient-to-r from-[#9632E4] to-[#D7277D] text-sm px-4 inline-block rounded-xl text-white">আমাদের টিম</p>
@@ -12,7 +12,7 @@ const OurTeam = () => {
             </div>
 
             {/* team member */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-12 gap-7 items-center justify-center mt-14 md:px-32 px-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-12 gap-5 items-center justify-center md:mt-14 sm:mt-12 mt-7 md:px-32 px-5">
                 <div className="relative w-full group hover:scale-[101%] hover:translate-y-1 duration-300 transition-all">
                     <div className="absolute -inset-1 -z-10 opacity-80 blur-[10px] bg-gradient-to-r from-[#9651ca] to-[#c4588a] p-1 s rounded-xl group-hover:blur-[15px] group-hover:opacity-90"></div>
                     <div className="p-7 flex flex-col justify-center bg-white items-center gap-1 rounded-xl">

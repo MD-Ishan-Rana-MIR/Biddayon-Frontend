@@ -6,7 +6,7 @@ import Support from "./Support";
 
 const page = () => {
     return (
-        <div className="md:space-y-32 sm:space-y-20 space-y-12">
+        <div className="md:space-y-24 sm:space-y-16 space-y-14">
             <ContactPageBanner></ContactPageBanner>
             <Contact></Contact>
             <Support></Support>

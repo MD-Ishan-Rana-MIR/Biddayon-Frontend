@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Support = () => {
     return (
-        <div className="md:h-[500px] py-16 md:py-0 px-3 bg-gradient-to-r from-[#9333EA] via-[#E5469F] to-[#FA8E40] flex justify-between items-center gap-16 flex-col md:flex-row">
+        <div className="md:h-[500px] py-16 md:py-0 px-3 mb-16 bg-gradient-to-r from-[#9333EA] via-[#E5469F] to-[#FA8E40] flex justify-between items-center gap-16 flex-col md:flex-row">
             <div className="md:w-1/2 space-y-1 md:space-y-3 text-center md:text-start">
                 <p className='text-sm bg-slate-200/40 text-white px-3 rounded-xl inline-block'>সাপোর্ট</p>
                 <h1 className='md:text-5xl text-2xl sm:text-3xl font-bold text-white'>আমাদের সাপোর্ট টিম সবসময় আপনার পাশে আছে</h1>
