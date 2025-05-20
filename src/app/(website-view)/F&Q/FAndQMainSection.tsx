@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const FAndQMainSection = () => {
     return (
-        <div className="flex justify-between flex-col md:flex-row items-start md:gap-16 sm:gap-12 gap-8 md:px-7 px-4">
+        <div className="flex justify-between flex-col md:flex-row items-start md:gap-12 sm:gap-8 gap-8 md:px-7 px-4">
             <div className="md:w-[25%] w-full">
                 <div className="shadow-md rounded-xl p-4 md:mb-5 mb-3 sm:mb-4">
                     <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
