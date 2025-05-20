@@ -29,7 +29,7 @@ const Footer = () => {
               <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>আমাদের সম্পর্কে</h1></Link>
               <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>যোগাযোগ</h1></Link>
               <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>ব্লগ</h1></Link>
-              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>সাধারণ প্রশ্ন</h1></Link>
+              <Link href="/F&Q"><h1 className='hover:text-[#c67cc9] cursor-pointer'>সাধারণ প্রশ্ন</h1></Link>
             </div>
           </div>
           <div className='text-left'>

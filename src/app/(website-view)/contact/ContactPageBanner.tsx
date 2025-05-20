@@ -35,7 +35,7 @@ const ContactPageBanner = () => {
                                 width={800}
                                 height={600}
                                 alt="Banner Image"
-                                className="w-full h-auto object-contain h-[300px] md:h-[350px]"
+                                className="w-full object-contain h-[300px] md:h-[350px]"
                             />
                         </motion.div>
                     </div>
