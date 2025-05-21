@@ -11,7 +11,7 @@ const FAndQCommunication = () => {
                 <h1 className='md:text-5xl text-2xl sm:text-3xl font-bold text-white'>আপনার প্রশ্নের উত্তর পাননি?</h1>
                 <p className='text-white md:text-xl sm:text-lg text-[16px] font-semibold'>আপনার প্রশ্নের উত্তর না পেলে আমাদের সাথে যোগাযোগ করুন। আমাদের দক্ষ সাপোর্ট টিম সবসময় আপনাকে সাহায্য করতে প্রস্তুত।</p>
                 <div className="flex flex-col md:flex-row md:items-start items-center md:gap-5 gap-2">
-                    <Link href={'/'} className="w-1/2 md:w-1/4 rounded-md flex justify-center items-center py-3 bg-white gap-3 hover:bg-slate-200">
+                    <Link href={'/contact'} className="w-1/2 md:w-1/4 rounded-md flex justify-center items-center py-3 bg-white gap-3 hover:bg-slate-200">
                         <ArrowRight size={15} />
                         <span className="text-sm">যোগাযোগ করুন</span>
                     </Link>
@@ -23,21 +23,21 @@ const FAndQCommunication = () => {
             </div>
             <div className="md:w-1/2">
                 <motion.div
-                            animate={{ y: [0, -20, 0] }}
-                            transition={{
-                                duration: 3,
-                                repeat: Infinity,
-                                ease: "easeInOut"
-                            }}
-                            className="w-full max-w-md md:max-w-lg lg:max-w-xl bg-[#e785bf] border-4 border-[#fa8e42] rounded-xl px-4"
-                        >
-                                <Image
-                                src="/images/team/member.avif"
-                                width={500}
-                                height={50}
-                                alt="Banner Image"
-                                className="w-full object-contain h-[300px] md:h-[350px]"
-                                />
+                    animate={{ y: [0, -20, 0] }}
+                    transition={{
+                        duration: 3,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                    }}
+                    className="w-full max-w-md md:max-w-lg lg:max-w-xl bg-[#e785bf] border-4 border-[#fa8e42] rounded-xl px-4"
+                >
+                    <Image
+                        src="/images/team/member.avif"
+                        width={500}
+                        height={50}
+                        alt="Banner Image"
+                        className="w-full object-contain h-[300px] md:h-[350px]"
+                    />
                 </motion.div>
             </div>
         </div>

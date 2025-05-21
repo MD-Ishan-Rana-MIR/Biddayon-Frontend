@@ -212,7 +212,7 @@
 //                     </button>
 //                 </div>
 //                 <nav className="flex flex-col space-y-4">
-                    
+
 //                     {navItems.map((item, index) => (
 //                         <Link
 //                             key={index}
@@ -297,10 +297,9 @@ import { useLanguage } from "@/context/language-context"
 import { LanguageSwitcher } from "../language-switch/language-switcher"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
-
 export default function Header() {
   const { t } = useLanguage()
-  const pathname = usePathname()
+  const pathname: string | null = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [theme, setTheme] = useState<"light" | "dark">("light")
@@ -354,7 +353,7 @@ export default function Header() {
   // Function to determine if a link is active
   const isActive = (path: string) => {
     if (path === "/" && pathname === "/") return true
-    if (path !== "/" && pathname.startsWith(path)) return true
+    if (path !== "/" && pathname!.startsWith(path)) return true
     return false
   }
 
@@ -369,9 +368,8 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/80 dark:bg-gray-950/80 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white/80 dark:bg-gray-950/80 backdrop-blur-md shadow-md" : "bg-transparent"
+        }`}
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-2xl">

@@ -22,22 +22,22 @@ const QuestionPageBanner = () => {
                     {/* Right Side */}
                     <div className="w-full md:w-[40%] flex justify-center">
                         <motion.div
-                                                    animate={{ y: [0, -20, 0] }}
-                                                    transition={{
-                                                        duration: 3,
-                                                        repeat: Infinity,
-                                                        ease: "easeInOut"
-                                                    }}
-                                                    className="w-full max-w-md md:max-w-lg lg:max-w-xl bg-[#e785bf] border-4 border-[#fa8e42] rounded-xl px-4"
-                                                >
-                                                    <Image
-                                                        src="/images/home-page/banner/banner-img-1.svg"
-                                                        width={800}
-                                                        height={600}
-                                                        alt="Banner Image"
-                                                        className="w-full object-contain h-[300px] md:h-[350px]"
-                                                    />
-                                                </motion.div>
+                            animate={{ y: [0, -20, 0] }}
+                            transition={{
+                                duration: 3,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
+                            className="w-full max-w-md md:max-w-lg lg:max-w-xl bg-[#e785bf] border-4 border-[#fa8e42] rounded-xl px-4"
+                        >
+                            <Image
+                                src="/images/home-page/banner/banner-img-1.svg"
+                                width={800}
+                                height={600}
+                                alt="Banner Image"
+                                className="w-full object-contain h-[300px] md:h-[350px]"
+                            />
+                        </motion.div>
                     </div>
                 </div>
             </div>
