@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <LanguageProvider>
           <Navbar></Navbar>
-          <main className=" min-h-screen pt-[71px] bg-[#FDFBFF] top-0  mx-auto " >
+          <main className=" min-h-screen  bg-[#FDFBFF] top-0  mx-auto " >
             {children}
           </main>
           <Footer></Footer>
