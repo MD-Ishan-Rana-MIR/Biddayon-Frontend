@@ -117,25 +117,21 @@ export default function PopularCourse() {
       </div>
 
       {/* Course Cards */}
-      <div className="grid grid-cols-1 items-center justify-between sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredCourses.map((course, index) => (
           <div
             key={index}
-            className={`w-full max-w-[300px] bg-white  overflow-hidden shadow-xl relative transition-transform duration-300 hover:-translate-y-4 hover:shadow-2xl`}
+            className="w-full max-w-[300px] bg-white overflow-hidden shadow-xl relative transition-transform duration-300 hover:-translate-y-4 hover:shadow-2xl"
           >
             <div className="pb-3">
-              <span
-                className={`absolute top-2 right-2 text-xs px-3 py-1 rounded-2xl  text-black font-semibold bg-white `}
-              >
+              <span className="absolute top-2 right-2 text-xs px-3 py-1 rounded-2xl text-black font-semibold bg-white">
                 {course.badge}
               </span>
-              <div
-                className={`bg-gray-100 h-44 rounded-md mb-4 flex items-center justify-center border-4 ${course.borderColor}`}
-              >
+              <div className={`bg-gray-100 h-44 rounded-md mb-4 flex items-center justify-center border-4 ${course.borderColor}`}>
                 <span className="text-gray-400 text-sm">Image</span>
               </div>
               <div className="px-4">
-                <div className=' h-16 ' >
+                <div className="h-16">
                   <h2 className="font-bold text-lg mb-1">{course.title}</h2>
                 </div>
                 <p className="text-sm text-gray-700 mb-2">{course.instructor}</p>
@@ -169,9 +165,6 @@ export default function PopularCourse() {
           <button className=' block mx-auto bgGradientColor px-4  py-2 rounded-xl text-white text-[14px] cursor-pointer ' > সব কোর্স দেখুন</button>
         </Link>
       </div>
-
-
-
     </div>
   );
 }

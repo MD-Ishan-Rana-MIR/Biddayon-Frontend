@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Achievement = () => {
     return (
-        <div className="md:mt-20 sm:mt-16 mt-12 px-4 flex items-center justify-between gap-16 flex-col md:flex-row">
+        <div className="md:mt-20 sm:mt-16 mt-12 px-10 flex items-center justify-between gap-16 flex-col md:flex-row  ">
             <div className="md:w-1/2">
                 <p className="text-sm text-white inline-block px-3 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 rounded-xl">আমাদের অর্জন</p>
                 <h2 className="md:text-5xl text-3xl sm:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-emerald-600 mt-2">আমাদের সাফল্য</h2>
@@ -50,7 +50,7 @@ const Achievement = () => {
                 </div>
             </div>
             <div className="md:w-1/2 border-4 rounded-xl overflow-hidden border-green-500">
-                <Image className="" width={300} height={300} alt="success" src={'/images/team/member.avif'}></Image>
+                <Image className=" object-cover mx-auto  " width={300} height={300} alt="success" src={'/images/team/member.avif'}></Image>
             </div>
         </div>
     );
