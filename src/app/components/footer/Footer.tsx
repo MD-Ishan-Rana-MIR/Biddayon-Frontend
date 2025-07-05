@@ -1,81 +1,172 @@
-import Link from 'next/link';
-import React from 'react';
-import { CiLocationOn, CiMail } from 'react-icons/ci';
-import { FiFacebook, FiInstagram, FiTwitter, FiYoutube } from 'react-icons/fi';
-import { IoCallOutline } from 'react-icons/io5';
+import Link from "next/link"
+import { BookOpen, Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react"
 
-const Footer = () => {
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+
+export default function Footer() {
   return (
-    <div>
-      <div className='bg-gradient-to-r from-[#13082E] to-[#19081C]  text-white py-4'>
-        <div className="grid mx-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-4 text-center">
-          <div className='text-left mx-auto'>
-            <h1 className='text-2xl font-bold my-4 text-[#ba0cc0]'>Logo</h1>
-            <p>
+    <footer className="w-full bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-950/30 dark:to-pink-950/30">
+      <div className="container px-4 md:px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="space-y-4">
+            <Link href="/" className="flex items-center gap-2 font-bold text-2xl">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center text-white">
+                <BookOpen className="h-5 w-5" />
+              </div>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">বিদ্যায়ন</span>
+            </Link>
+            <p className="text-gray-600 dark:text-gray-300">
               বিদ্যায়ন হল একটি অনলাইন শিক্ষা প্লাটফর্ম যা বাংলাদেশের সকল মানুষের জন্য উচ্চমানের শিক্ষা সহজলভ্য করার লক্ষ্যে কাজ করে যাচ্ছে।
             </p>
-            <div className='flex  gap-4 mt-4'>
-              <FiFacebook className='text-2xl hover:text-[#c67cc9] cursor-pointer' />
-              <FiTwitter className='text-2xl hover:text-[#c67cc9] cursor-pointer' />
-              <FiInstagram className='text-2xl hover:text-[#c67cc9] cursor-pointer' />
-              <FiYoutube className='text-2xl hover:text-[#c67cc9] cursor-pointer' />
+            <div className="flex space-x-4">
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+              >
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+              >
+                <Twitter className="h-5 w-5" />
+                <span className="sr-only">Twitter</span>
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+              >
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+              >
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
+              </Link>
             </div>
           </div>
-          <div className='text-left '>
-            <h1 className='text-2xl font-bold '>দ্রুত লিঙ্ক</h1>
-            <div className='flex flex-col gap-2 mt-4 '>
-              <Link href="/"><h1 className='hover:text-[#c67cc9] cursor-pointer'>হোম</h1></Link>
-              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>কোর্সসমূহ</h1></Link>
-              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>আমাদের সম্পর্কে</h1></Link>
-              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>যোগাযোগ</h1></Link>
-              <Link href="#"><h1 className='hover:text-[#c67cc9] cursor-pointer'>ব্লগ</h1></Link>
-              <Link href="/F&Q"><h1 className='hover:text-[#c67cc9] cursor-pointer'>সাধারণ প্রশ্ন</h1></Link>
-            </div>
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold">দ্রুত লিঙ্ক</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  হোম
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/courses"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  কোর্সসমূহ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  আমাদের সম্পর্কে
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  যোগাযোগ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  ব্লগ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faq"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  সাধারণ প্রশ্ন
+                </Link>
+              </li>
+            </ul>
           </div>
-          <div className='text-left'>
-            <h1 className='text-2xl font-bold '>যোগাযোগ</h1>
-           <div>
-            <div className='flex items-center mt-4'>
-              <CiLocationOn className='inline-block  mr-2' />
-              <p>১২৩, গুলশান এভিনিউ, ঢাকা-১২১২, বাংলাদেশ</p>
-            </div>
-            <div className='flex items-center mt-4'>
-              <IoCallOutline className='inline-block  mr-2' />
-              <p>ফোন: +880 123456789</p>
-            </div>
-            <div className='flex items-center mt-4'>
-              <CiMail className='inline-block  mr-2' />
-              <p>ইমেইল: info@biddayon.com</p>
-            </div>
-           </div>
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold">যোগাযোগ</h3>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <MapPin className="h-5 w-5 text-gray-600 dark:text-gray-300 mt-0.5" />
+                <span className="text-gray-600 dark:text-gray-300">১২৩, গুলশান এভিনিউ, ঢাকা-১২১২, বাংলাদেশ</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-gray-600 dark:text-gray-300" />
+                <Link
+                  href="tel:+8801712345678"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  +৮৮০১৭১২৩৪৫৬৭৮
+                </Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="h-5 w-5 text-gray-600 dark:text-gray-300" />
+                <Link
+                  href="mailto:info@biddhayon.com"
+                  className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+                >
+                  info@biddhayon.com
+                </Link>
+              </li>
+            </ul>
           </div>
-          <div className='text-left '>
-
-            <h1 className='text-2xl font-bold '>নিউজলেটার</h1>
-            <p className='my-4'>
-              আমাদের নতুন কোর্স এবং অফার সম্পর্কে জানতে সাবস্ক্রাইব করুন
-            </p>
-
-            <div className='flex items-center'>
-              <input type="email" placeholder="আপনার ইমেইল ঠিকানা" className='border border-gray-300 p-2 rounded-md' />
-
-              <button className='bg-[#ba0cc0] text-white px-2 py-2.5 rounded-md ml-2'>সাবস্ক্রাইব</button>
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold">নিউজলেটার</h3>
+            <p className="text-gray-600 dark:text-gray-300">আমাদের নতুন কোর্স এবং অফার সম্পর্কে জানতে সাবস্ক্রাইব করুন</p>
+            <div className="flex flex-col sm:flex-row gap-2">
+              <Input type="email" placeholder="আপনার ইমেইল" className="bg-white dark:bg-gray-900" />
+              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white">
+                সাবস্ক্রাইব
+              </Button>
             </div>
-
           </div>
         </div>
-        <div className='border-t border-[#787479] my-4 mx-5'></div>
-        <div className=' flex mx-10 justify-between mb-15'>
-          <p>© 2025 বিদ্যায়ন। সর্বস্বত্ব সংরক্ষিত।</p>
-          <div className='flex gap-4 '>
-            <a href="">গোপনীয়তা নীতি</a>
-            <a href="">শর্তাবলী</a>
-            <a href="">যোগাযোগ</a>
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-center text-sm text-gray-600 dark:text-gray-300 md:text-left">
+            &copy; {new Date().getFullYear()} বিদ্যায়ন। সর্বস্বত্ব সংরক্ষিত।
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="/terms"
+              className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+            >
+              ব্যবহারের শর্তাবলী
+            </Link>
+            <Link
+              href="/privacy"
+              className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+            >
+              গোপনীয়তা নীতি
+            </Link>
+            <Link
+              href="/refund"
+              className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400"
+            >
+              রিফান্ড পলিসি
+            </Link>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Footer;
+    </footer>
+  )
+}
