@@ -82,7 +82,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
         // Update html lang attribute
         document.documentElement.lang = language
-    }, [])
+    }, [language])
 
     const setLanguage = (newLanguage: Language) => {
         setLanguageState(newLanguage)
