@@ -227,7 +227,17 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.adminText {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: #7C3AED;
 }
