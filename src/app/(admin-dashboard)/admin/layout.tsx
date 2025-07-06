@@ -45,9 +45,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <SheetContent side="left" className="p-0 w-[220px]">
             {/* Logo & Close */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
-              <h1 className="text-lg font-bold text-[#7C3AED]">
-                বিদ্যায়ন <span className="text-black">Admin</span>
-              </h1>
+              <Link href={"/admin"}>
+                <h1 className="text-lg font-bold text-[#7C3AED]">
+                  বিদ্যায়ন <span className="text-black">Admin</span>
+                </h1>
+              </Link>
               <SheetClose asChild>
                 {/* <button>
                   <X className="h-5 w-5 text-gray-600" />
