@@ -1,8 +1,11 @@
 import React from 'react'
+import UserList from './UserList'
 
-const Page = () => {
+const Page : React.FC = () => {
   return (
-    <div>User</div>
+    <div>
+      <UserList></UserList>
+    </div>
   )
 }
 

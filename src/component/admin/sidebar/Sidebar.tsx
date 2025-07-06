@@ -46,9 +46,11 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed, setCollapsed }) => {
                 <div className="flex items-center justify-between px-1">
                     {/* Logo */}
                     {!collapsed && (
-                        <h1 className="font-bold text-[#7C3AED] text-base">
-                            বিদ্যায়ন <span className="text-black">Admin</span>
-                        </h1>
+                        <Link href={"/admin"}>
+                            <h1 className="font-bold text-[#7C3AED] text-base">
+                                বিদ্যায়ন <span className="text-black">Admin</span>
+                            </h1>
+                        </Link>
                     )}
 
                     {/* Toggle Button */}
